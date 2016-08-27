@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bryan.unitconverter.PoundsToKg">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pounds_edit_text"
+        android:hint="@string/pounds_text"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convert_poundsToKg"
+        android:text="@string/convert_button"
+        android:onClick="convertValues"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pounds_edit_text"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kg_edit_text"
+        android:hint="@string/kg_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/convert_poundsToKg"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_poundsToKg"
+        android:text="@string/clear_button"
+        android:onClick="clearBoth"
+        android:layout_below="@+id/kg_edit_text"
+        android:layout_alignLeft="@+id/convert_poundsToKg"
+        android:layout_alignStart="@+id/convert_poundsToKg" />
+
+</RelativeLayout>

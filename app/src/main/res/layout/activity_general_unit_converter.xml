@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bryan.unitconverter.GeneralUnitConverter">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pounds_to_kg"
+        android:text="@string/lbs_to_kgs"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/far_to_celsius"
+        android:text="@string/far_to_celsius"
+        android:layout_below="@id/pounds_to_kg"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feet_to_meters"
+        android:text="@string/feet_to_meters"
+        android:layout_below="@id/far_to_celsius"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/miles_to_km"
+        android:text="@string/miles_to_km"
+        android:layout_below="@id/feet_to_meters"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bryan.unitconverter.TimeUntilDay">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starting_day"
+        android:hint="@string/starting_day"
+        android:editable="false"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/today_button"
+        android:text="@string/today_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/days_until"
+        android:layout_alignEnd="@+id/days_until"
+        android:onClick="makeStartToday"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ending_day"
+        android:hint="@string/ending_day"
+        android:layout_below="@id/starting_day"
+        android:editable="false"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days_until"
+        android:text="@string/days_until_button"
+        android:layout_below="@id/ending_day"
+        android:layout_centerHorizontal="true"
+        android:onClick="getDays"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_days"
+        android:text="@string/clear_button"
+        android:onClick="clearBoth"
+        android:layout_below="@id/starting_day"
+        android:layout_alignLeft="@id/today_button"
+        android:layout_alignStart="@id/today_button" />
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

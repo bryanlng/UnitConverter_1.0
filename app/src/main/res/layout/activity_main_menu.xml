@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainMenu">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hex_to_decimal"
+        android:id="@+id/hex_to_decimal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decimal_to_binary"
+        android:id="@+id/decimal_to_binary"
+        android:layout_below="@id/hex_to_decimal"
+
+        />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/base_to_base"-->
+        <!--android:id="@+id/base_to_base"-->
+        <!--android:layout_below="@id/decimal_to_binary"-->
+
+        <!--/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_until"
+        android:id="@+id/time_until"
+        android:layout_below="@id/decimal_to_binary"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/general_convert"
+        android:text="@string/general_convert"
+        android:layout_below="@id/time_until"
+        />
+
+</RelativeLayout>

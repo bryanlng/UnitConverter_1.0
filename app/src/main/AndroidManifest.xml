@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bryan.unitconverter" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HexToDecimal"
+            android:label="@string/title_activity_hex_to_decimal" >
+        </activity>
+        <activity
+            android:name=".DecimalToBinary"
+            android:label="@string/title_activity_decimal_to_binary" >
+        </activity>
+        <activity
+            android:name=".AnyBaseToAnyBase"
+            android:label="@string/title_activity_any_base_to_any_base" >
+        </activity>
+        <activity
+            android:name=".TimeUntilDay"
+            android:label="@string/title_activity_time_until_day" >
+        </activity>
+        <activity
+            android:name=".GeneralUnitConverter"
+            android:label="@string/title_activity_general_unit_converter" >
+        </activity>
+        <activity
+            android:name=".PoundsToKg"
+            android:label="@string/title_activity_pounds_to_kg" >
+        </activity>
+        <activity
+            android:name=".FahrToCelsius"
+            android:label="@string/title_activity_fahr_to_celsius" >
+        </activity>
+        <activity
+            android:name=".FeetToMeters"
+            android:label="@string/title_activity_feet_to_meters" >
+        </activity>
+        <activity
+            android:name=".MilesToKm"
+            android:label="@string/title_activity_miles_to_km" >
+        </activity>
+    </application>
+
+</manifest>
